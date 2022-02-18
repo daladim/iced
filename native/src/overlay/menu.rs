@@ -254,7 +254,7 @@ where
                 border_width: self.style.border_width,
                 border_radius: 0.0,
             },
-            self.style.background,
+            self.style.background.clone(),
         );
 
         self.container
@@ -425,7 +425,7 @@ where
                         border_width: 0.0,
                         border_radius: 0.0,
                     },
-                    self.style.selected_background,
+                    self.style.selected_background.clone(),
                 );
             }
 
